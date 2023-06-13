@@ -18,6 +18,8 @@ if __name__ == "__main__":
         print("Success you're connected to Snowflake account: " + account)
         print("Enjoy the Hands-on Lab!")
     except OperationalError as oe:
+        print(account)
+        print(snowpark_config)
         print(oe.msg)
     except DatabaseError as de:
         print(de.msg)
