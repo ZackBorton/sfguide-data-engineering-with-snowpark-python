@@ -22,7 +22,10 @@ if __name__ == "__main__":
         print(snowpark_config)
         print(oe.msg)
     except DatabaseError as de:
+        print(account)
+        print(snowpark_config)
         print(de.msg)
+        
 
 
 
